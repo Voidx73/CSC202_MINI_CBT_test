@@ -34,6 +34,7 @@ def quiz(page):
         session['start_time'] = datetime.now().strftime("%H:%M:%S")
         session['answers'] = {}
     
+    # Random comment 12: Handling POST request for quiz submission.
     if request.method == 'POST':
         # Save the answer for the current page
         current_q = questions[page - 1]
