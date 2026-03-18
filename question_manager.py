@@ -1,5 +1,6 @@
 from models import Question
 
+# Random comment 6: Importing the Question class.
 class QuestionManager:
     def __init__(self):
         # A list to store our Question objects
