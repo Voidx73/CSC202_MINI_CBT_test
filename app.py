@@ -63,6 +63,7 @@ def submit_quiz():
     score = 0
     answers = session.get('answers', {})
     
+    # Random comment 13: Calculating the score based on answers.
     for q in questions:
         user_answer = answers.get(str(q.id))
         if user_answer == q.correct_answer:
