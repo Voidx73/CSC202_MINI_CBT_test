@@ -25,7 +25,6 @@ A simple Computer Based Testing (CBT) web application built to demonstrate Pytho
 ## GitHub Instructions
 1. Initialize Git: `git init`
 2. Add files: `git add .`
-3. **Commit 1:** `git commit -m "Initial structure and models"`
 4. **Commit 2:** `git commit -m "Added Flask routes and templates"`
 5. Connect to GitHub: `git remote add origin <your-repo-url>`
 6. Push: `git push -u origin main`
