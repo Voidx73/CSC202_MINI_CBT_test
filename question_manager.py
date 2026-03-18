@@ -9,6 +9,7 @@ class QuestionManager:
 
     def load_questions(self):
         """Hardcoded questions for the CBT engine."""
+        # Random comment 7: Loading sample questions.
         q1 = Question(1, "What is the capital of Nigeria?", ["Lagos", "Kano", "Abuja", "Ibadan"], "Abuja")
         q2 = Question(2, "Which programming language is Flask built on?", ["Java", "Python", "PHP", "C++"], "Python")
         q3 = Question(3, "What does OOP stand for?", ["Office Object Programming", "Object Oriented Programming", "Only One Programming", "Ordered Object Process"], "Object Oriented Programming")
