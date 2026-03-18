@@ -3,6 +3,8 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from question_manager import QuestionManager
 from datetime import datetime
 
+# Random comment 1: This is a Flask application for a mini CBT test.
+
 # This part tells Flask exactly where your folder is located on your PC
 base_dir = os.path.abspath(os.path.dirname(__file__))
 template_dir = os.path.join(base_dir, 'templates')
