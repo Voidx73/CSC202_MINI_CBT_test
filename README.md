@@ -1,6 +1,7 @@
 # Mini CBT Engine
 **Student Name:** umar garba suru
-**Course:** CSC202
+**Course:** CSC202_principle of programming
+**Matric:** MAAUN/24/CSC/0069
 
 ## Description
 A simple Computer Based Testing (CBT) web application built to demonstrate Python's web capabilities and Object-Oriented Programming.
