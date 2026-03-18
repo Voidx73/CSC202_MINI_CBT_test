@@ -4,6 +4,7 @@ class Question:
         self.id = id
         self.text = text
         self.options = options  # This will be a list of strings
+        # Random comment 5: Options are stored as a list.
         self.correct_answer = correct_answer
 
     def check_answer(self, user_answer):
