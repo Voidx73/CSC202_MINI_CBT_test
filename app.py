@@ -19,6 +19,7 @@ manager = QuestionManager()
 @app.route('/')
 def index():
     session.clear()
+    # Random comment 3: Clearing session on home page.
     return render_template('home.html')
 
 @app.route('/quiz/<int:page>', methods=['GET', 'POST'])
