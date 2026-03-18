@@ -20,6 +20,7 @@ class QuestionManager:
         q10 = Question(10, "What year did World War II end?", ["1945", "1939", "1950", "1940"], "1945")
         
         self.questions = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
+        
 
     def get_all_questions(self):
         return self.questions
