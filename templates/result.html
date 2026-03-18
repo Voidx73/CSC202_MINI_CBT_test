@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h3 {
+            color: #27ae60;
+        }
+        p {
+            font-size: 18px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Completed!</h1>
+    <h3>Your Score: {{ score }} / {{ total }}</h3>
+    <p>Started at: {{ start_time }}</p>
+    <p>Finished at: {{ end_time }}</p>
+    <a href="/">Try Again</a>
+</body>
+</html>

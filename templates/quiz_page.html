@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .question {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .options {
+            margin: 10px 0;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .page-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Answer the question:</h2>
+    <div class="page-info">Question {{ page }} of {{ total }}</div>
+    <div class="question">
+        <p><strong>{{ question.text }}</strong></p>
+        <form action="/quiz/{{ page }}" method="POST">
+            {% for option in question.options %}
+                <div class="options">
+                    <input type="radio" name="question_{{ question.id }}" value="{{ option }}" required> {{ option }}
+                </div>
+            {% endfor %}
+            <div class="navigation">
+                {% if page > 1 %}
+                    <button type="submit" name="action" value="previous">Previous</button>
+                {% endif %}
+                {% if is_last %}
+                    <button type="submit" name="action" value="submit">Submit Quiz</button>
+                {% else %}
+                    <button type="submit" name="action" value="next">Next</button>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+</body>
+</html>
