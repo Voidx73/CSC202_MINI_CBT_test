@@ -1,5 +1,5 @@
 # Mini CBT Engine
-**Student Name:** Muhammad Malan  
+**Student Name:** umar garba suru
 **Course:** CSC202
 
 ## Description
